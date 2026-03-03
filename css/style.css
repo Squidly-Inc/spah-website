@@ -363,11 +363,30 @@ a {
 /* --- Hero Section --- */
 .hero {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, var(--cream) 0%, var(--rose-50) 50%, var(--teal-50) 100%);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .hero::before {
