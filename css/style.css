@@ -10,12 +10,12 @@
   --rose-200: #E8B4B8;
   --rose-300: #D4919A;
   --rose-400: #C06B77;
-  --teal-50: #F0F9F6;
-  --teal-100: #C5E8DD;
-  --teal-200: #7BBFAD;
-  --teal-300: #5B9A8B;
-  --teal-400: #4A8272;
-  --teal-500: #3A6B5C;
+  --teal-50: #EDF9FA;
+  --teal-100: #B8EEF2;
+  --teal-200: #5CD6DE;
+  --teal-300: #2BBCC7;
+  --teal-400: #1FA3AD;
+  --teal-500: #178891;
   --navy: #1E1E3A;
   --navy-light: #2D2D4F;
   --navy-muted: #4A4A6A;
@@ -196,7 +196,7 @@ a {
 .nav-cta:hover {
   background: var(--teal-400);
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(91, 154, 139, 0.3);
+  box-shadow: 0 4px 15px rgba(43, 188, 199, 0.3);
 }
 
 /* Hamburger Menu */
@@ -319,7 +319,7 @@ a {
 .btn-primary:hover {
   background: var(--teal-400);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(91, 154, 139, 0.35);
+  box-shadow: 0 8px 25px rgba(43, 188, 199, 0.35);
 }
 
 .btn-secondary {
@@ -331,7 +331,7 @@ a {
 .btn-secondary:hover {
   background: var(--teal-50);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(91, 154, 139, 0.15);
+  box-shadow: 0 8px 25px rgba(43, 188, 199, 0.15);
 }
 
 .btn-rose {
@@ -418,7 +418,7 @@ a {
   left: -10%;
   width: 60%;
   height: 100%;
-  background: radial-gradient(ellipse, rgba(91, 154, 139, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(43, 188, 199, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -654,7 +654,7 @@ a {
 
 .package-card.featured {
   border-color: var(--teal-200);
-  box-shadow: 0 10px 40px rgba(91, 154, 139, 0.12);
+  box-shadow: 0 10px 40px rgba(43, 188, 199, 0.12);
 }
 
 .package-badge {
@@ -1187,7 +1187,7 @@ a {
   right: -20%;
   width: 50%;
   height: 200%;
-  background: radial-gradient(ellipse, rgba(91, 154, 139, 0.15) 0%, transparent 60%);
+  background: radial-gradient(ellipse, rgba(43, 188, 199, 0.15) 0%, transparent 60%);
   pointer-events: none;
 }
 
