@@ -179,10 +179,10 @@ a {
   width: 100%;
 }
 
-.nav-cta {
+.nav-links a.nav-cta {
   background: var(--teal-300);
   color: var(--white) !important;
-  padding: 0.45rem 1.15rem;
+  padding: 0.4rem 1.1rem;
   border-radius: 50px;
   font-size: 0.7rem;
   font-weight: 600;
