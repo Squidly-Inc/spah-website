@@ -584,6 +584,8 @@ a {
 .about-hero-photo {
   position: relative;
   z-index: 1;
+  max-width: 380px;
+  justify-self: center;
 }
 
 .about-hero-photo img {
