@@ -20,7 +20,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar scrolled">
     <div class="container">
       <a href="index.html" class="nav-logo"><img src="images/logo.webp" alt="SPAH - Spa Parties at Home"></a>
       <ul class="nav-links">
@@ -37,45 +37,43 @@
       </button>
     </div>
   </nav>
+  <div class="nav-overlay"></div>
 
   <main>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
+    <!-- Hero — Founder Intro (homepage-style with gradient + floats) -->
+    <section class="hero" style="min-height: auto; padding-top: 7rem; padding-bottom: 4rem;">
       <div class="container">
-        <h1>Our Story</h1>
-        <p>The people and passion behind every SPAH party</p>
-      </div>
-    </section>
-
-    <!-- Founder Section -->
-    <section class="section reveal">
-      <div class="container">
-        <div class="feature-row">
-          <div class="feature-content">
-            <span class="section-label">MEET THE FOUNDER</span>
-            <h2 style="margin-top: 0.5rem;">Julie Sullivan</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+          <div class="hero-content" style="max-width: 100%;">
+            <div class="hero-badge">Our Story</div>
+            <h1>Meet <em>Julie.</em></h1>
             <p>Hi, I'm Julie Sullivan, the founder of SPAH, Spa Parties at Home, and I started this business back in 2010 out of my love for crafts and working with kids. As a teacher, I've always believed in the power of creativity, imagination, and making every child feel included and celebrated.</p>
-            <p>Over the years, I've built an amazing team of women who help bring our parties to life, but I still personally love being part of the creative process—especially when it comes to our spa-inspired crafts. While we offer spa-themed activities, our focus is never on appearance. Instead, we create a fun, welcoming space where kids can express themselves, get creative, and simply enjoy being together.</p>
-            <p>To us, parties are about more than just activities—they're about laughter, friendship, and making meaningful memories. Our goal is to give every child a joyful, creative experience while making the day easy and stress-free for parents.</p>
+            <p style="font-size: 1.05rem; color: var(--text-light); max-width: 520px; line-height: 1.7;">Over the years, I've built an amazing team of women who help bring our parties to life, but I still personally love being part of the creative process—especially when it comes to our spa-inspired crafts.</p>
           </div>
-          <div class="feature-image"><img src="images/julie-headshot.webp" alt="Julie Sullivan, founder of SPAH - Spa Parties at Home" loading="lazy" style="object-position: center 20%;"></div>
+          <div style="position: relative; z-index: 1;">
+            <img src="images/julie-headshot.webp" alt="Julie Sullivan, founder of SPAH - Spa Parties at Home" style="width: 100%; border-radius: 1.25rem; box-shadow: 0 12px 40px rgba(0,0,0,0.12); object-fit: cover; aspect-ratio: 3/4; object-position: center 20%;">
+          </div>
         </div>
       </div>
+      <div class="float-element float-1"></div>
+      <div class="float-element float-2"></div>
+      <div class="float-element float-3"></div>
+      <div class="hero-fade"></div>
     </section>
 
-    <!-- How It Started -->
-    <section class="section section-sm reveal" style="background: var(--rose-50);">
+    <!-- Philosophy Section -->
+    <section class="section reveal">
       <div class="container" style="max-width: 800px; text-align: center;">
-        <span class="section-label">SINCE 2010</span>
-        <h2 style="margin-top: 0.5rem;">How It All Started</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+        <span class="section-label">OUR PHILOSOPHY</span>
+        <h2 style="margin-top: 0.5rem;">It's About More Than Spa Days</h2>
+        <p>While we offer spa-themed activities, our focus is never on appearance. Instead, we create a fun, welcoming space where kids can express themselves, get creative, and simply enjoy being together.</p>
+        <p>To us, parties are about more than just activities—they're about laughter, friendship, and making meaningful memories. Our goal is to give every child a joyful, creative experience while making the day easy and stress-free for parents.</p>
       </div>
     </section>
 
     <!-- Team Section -->
-    <section class="section reveal">
+    <section class="section reveal" style="background: linear-gradient(135deg, var(--cream) 0%, var(--rose-50) 50%, var(--teal-50) 100%); position: relative; overflow: hidden;">
       <div class="container">
         <div class="section-header">
           <span class="section-label">THE SPAH CREW</span>
@@ -105,8 +103,13 @@
           </div>
           <div class="feature-image"><img src="images/team-setup.webp" alt="SPAH team setting up spa stations" loading="lazy"></div>
         </div>
+      </div>
+    </section>
 
-        <div class="feature-row reveal">
+    <!-- Behind the Scenes -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="feature-row">
           <div class="feature-image"><img src="images/team-fun.webp" alt="The SPAH team together" loading="lazy"></div>
           <div class="feature-content">
             <h3>More Than Just a Party</h3>
@@ -114,16 +117,25 @@
             <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
           </div>
         </div>
+
+        <div class="feature-row reveal" style="margin-top: 2rem;">
+          <div class="feature-content">
+            <h3>The SPAH Experience</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="feature-image"><img src="images/team-helpers.webp" alt="Young helpers at a SPAH craft station" loading="lazy"></div>
+        </div>
       </div>
     </section>
 
-    <!-- Action shot section -->
-    <section class="section section-sm reveal" style="background: var(--rose-50);">
+    <!-- Action shot full-width -->
+    <section class="section reveal" style="background: linear-gradient(135deg, var(--teal-50) 0%, var(--rose-50) 100%); position: relative; overflow: hidden;">
       <div class="container" style="text-align: center;">
-        <span class="section-label">BEHIND THE SCENES</span>
-        <h2 style="margin-top: 0.5rem;">The SPAH Experience</h2>
-        <p style="max-width: 700px; margin: 0 auto 2rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-        <img src="images/team-helpers.webp" alt="Young helpers at a SPAH craft station" style="width: 100%; max-width: 800px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.1);" loading="lazy">
+        <span class="section-label">SINCE 2010</span>
+        <h2 style="margin-top: 0.5rem;">Creating Memories, One Party at a Time</h2>
+        <p style="max-width: 700px; margin: 0 auto 2rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <img src="images/julie-action.webp" alt="Julie at a SPAH party" style="width: 100%; max-width: 700px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.1);" loading="lazy">
       </div>
     </section>
 
