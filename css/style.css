@@ -581,6 +581,14 @@ a {
   align-items: center;
 }
 
+.about-mobile-title {
+  display: none;
+}
+
+.about-photo-mobile {
+  display: none;
+}
+
 .about-hero-photo {
   position: relative;
   z-index: 1;
@@ -601,13 +609,23 @@ a {
   .about-hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 2rem;
+    gap: 0;
   }
 
-  .about-hero-photo {
-    order: -1;
-    max-width: 280px;
-    margin: 0 auto;
+  .about-mobile-title {
+    display: block;
+    font-size: clamp(1.85rem, 4vw, 2.75rem);
+    margin-bottom: 1rem;
+  }
+
+  .about-photo-mobile {
+    display: block;
+    max-width: 260px;
+    margin: 1.5rem auto;
+  }
+
+  .about-photo-desktop {
+    display: none;
   }
 
   .about-hero-grid .hero-content p {
